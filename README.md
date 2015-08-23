@@ -1,7 +1,18 @@
-# getdata-031
-Getting and Cleaning Data Course Project
+# getdata-031: Getting and Cleaning Data Course Project
 
 
+* auto-gen TOC:
+{:toc}
+
+
+## Objective
+
+
+**Notes** 
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+
+## The analysis
 The 'run_analysis.R' script does the following:
  * Retrieves from the internet the source data package
  * Merges the training and the test sets to create one data set.
@@ -19,8 +30,10 @@ IMPORTANT:  Ensure that the library **dplyr** is installed in your R framework
 
 
 
-## Reading the dataset
 
+## Reading the tidy dataset
+
+The generated tidy dataset can be read using the following R code
 
 
 ```{r}
@@ -226,19 +239,40 @@ tidyDataDS <- read.table(localfile, header = TRUE, sep=",")
  **Standard deviation** of the magnitude of the three-dimensional body linear acceleration signals  (frequency domain analysis) 
 
 #### fBodyBodyAccJerkMag-mean()  
- **Mean value** of the NA  (frequency domain analysis) 
+ **Mean value** of the magnitude of the three-dimensional NA  (frequency domain analysis) 
 
 #### fBodyBodyAccJerkMag-std()  
- **Standard deviation** of the NA  (frequency domain analysis) 
+ **Standard deviation** of the magnitude of the three-dimensional NA  (frequency domain analysis) 
 
 #### fBodyBodyGyroMag-mean()  
- **Mean value** of the NA  (frequency domain analysis) 
+ **Mean value** of the  magnitude of the three-dimensional NA  (frequency domain analysis) 
 
 #### fBodyBodyGyroMag-std()  
- **Standard deviation** of the NA  (frequency domain analysis) 
+ **Standard deviation** of the magnitude of the three-dimensional NA  (frequency domain analysis) 
 
 #### fBodyBodyGyroJerkMag-mean()  
- **Mean value** of the NA  (frequency domain analysis) 
+ **Mean value** of the magnitude of the three-dimensional NA  (frequency domain analysis) 
 
 #### fBodyBodyGyroJerkMag-std()  
- **Standard deviation** of the NA  (frequency domain analysis) 
+ **Standard deviation** of the magnitude of the three-dimensionalNA  (frequency domain analysis) 
+
+
+
+
+
+
+
+License:
+========
+
+
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+For more information about this dataset contact: activityrecognition@smartlab.ws
+
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
