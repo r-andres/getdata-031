@@ -29,7 +29,12 @@ library(dplyr)
 
 # Grab the indexes and labels of the measurements on the mean and standard deviation
 x_features <- read.table('UCI HAR Dataset/features.txt')
-sel_x_features <- subset(x_features, grepl("*mean\\(|*std\\(", x_features$V2) )
+sel_x_features <- subset(x_features,
+                         `&`( grepl("*mean\\(|*std\\(", x_features$V2),
+                                    !(grepl("*BodyBody*", x_features$V2))))
+
+
+
 names(sel_x_features) <- c ('index', 'label')
 
 
