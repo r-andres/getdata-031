@@ -1,16 +1,29 @@
 # getdata-031: Getting and Cleaning Data Course Project
 
+## Index
+* Objective
+* The analysis
+* How to run 'run_analysis.R'
+* Reading the tidy dataset
+* Code book
+* License of the original dataset
 
-* auto-gen TOC:
-{:toc}
 
 
 ## Objective
+The objective of the __Getting and Cleaning Data Course Project__ is the preparation of a dataset ready for the next stages of data analysis. 
 
+The source dataset comprises information about Human Activity Recognition Using Smartphones, the aim of the project is to create a tidy dataset and to document its content and  
+
+Each record provided contains (more details in the code book section)
+- 66-feature vector with time and frequency domain variables d
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
 
 **Notes** 
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
+
 
 ## The analysis
 The 'run_analysis.R' script does the following:
@@ -22,6 +35,24 @@ The 'run_analysis.R' script does the following:
  * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## How to run 'run_analysis.R'
+
+1. Get this repository from github
+
+```{r}
+git clone https://github.com/r-andres/getdata-031.git
+
+```
+
+
+1. Execute the following R code in your environment. 
+
+```{r}
+setwd('path/to/your/local/clone')
+
+source('run_analysis.R')
+
+```
+
 
 IMPORTANT:  The script, as first steps, retrieves the required data package from internet and decompresses it. 
 The 'run_analysis.R' script can be run without downloading the original data as long as the data required is prepared in your working directory.
@@ -259,11 +290,19 @@ tidyDataDS <- read.table(localfile, header = TRUE, sep=",")
 
 
 
+## License of the original dataset
 
-
-
-License:
-========
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Universit? degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
 
 
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
@@ -276,3 +315,4 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
