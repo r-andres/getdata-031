@@ -1,0 +1,217 @@
+Codebook
+========
+
+The tidy dataset collects data about human activity recognition experiments that have been carried out with a group of 30 volunteers. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone. 
+
+Using its embedded accelerometer and gyroscope, the authors of the experiment captured 3-axial linear acceleration and 3-axial angular velocity. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+Full details can be found at: 
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+Each record provided contains
+
+- 60-feature vector with time and frequency domain variables.
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+Notes
+=====
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+- First line contains the name of each feature.
+- Only meaningful mean() and std() features have been left.
+- The "BodyBody" features have been also intently filtered as long as a concrete
+  definition could not be deduced from the original features description.
+  
+
+Feature descriptions
+====================
+
+* activity  
+ Identifies the activity being performed by the volunteer for each window sample. Possible values:  WALKING, WALKINGUPSTAIRS, WALKINGDOWNSTAIRS, SITTING, STANDING, LAYING.
+
+*  subject  
+ Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+*  tBodyAcc-mean()-X  
+ Mean value of the body linear acceleration signal in the axis X (time domain analysis) 
+
+*  tBodyAcc-mean()-Y  
+ Mean value of the body linear acceleration signal in the axis Y (time domain analysis) 
+
+*  tBodyAcc-mean()-Z  
+ Mean value of the body linear acceleration signal in the axis Z (time domain analysis) 
+
+*  tBodyAcc-std()-X  
+ Standard deviation of the body linear acceleration signal in the axis X (time domain analysis) 
+
+*  tBodyAcc-std()-Y  
+ Standard deviation of the body linear acceleration signal in the axis Y (time domain analysis) 
+
+*  tBodyAcc-std()-Z  
+ Standard deviation of the body linear acceleration signal in the axis Z (time domain analysis) 
+
+*  tGravityAcc-mean()-X  
+ Mean value of the gravity linear acceleration signal in the axis X (time domain analysis) 
+
+*  tGravityAcc-mean()-Y  
+ Mean value of the gravity linear acceleration signal in the axis Y (time domain analysis) 
+
+*  tGravityAcc-mean()-Z  
+ Mean value of the gravity linear acceleration signal in the axis Z (time domain analysis) 
+
+*  tGravityAcc-std()-X  
+ Standard deviation of the gravity linear acceleration signal in the axis X (time domain analysis) 
+
+*  tGravityAcc-std()-Y  
+ Standard deviation of the gravity linear acceleration signal in the axis Y (time domain analysis) 
+
+*  tGravityAcc-std()-Z  
+ Standard deviation of the gravity linear acceleration signal in the axis Z (time domain analysis) 
+
+*  tBodyAccJerk-mean()-X  
+ Mean value of the body linear acceleration jerk signal in the axis X (time domain analysis) 
+
+*  tBodyAccJerk-mean()-Y  
+ Mean value of the body linear acceleration jerk signal in the axis Y (time domain analysis) 
+
+*  tBodyAccJerk-mean()-Z  
+ Mean value of the body linear acceleration jerk signal in the axis Z (time domain analysis) 
+
+*  tBodyAccJerk-std()-X  
+ Standard deviation of the body linear acceleration jerk signal in the axis X (time domain analysis) 
+
+*  tBodyAccJerk-std()-Y  
+ Standard deviation of the body linear acceleration jerk signal in the axis Y (time domain analysis) 
+
+*  tBodyAccJerk-std()-Z  
+ Standard deviation of the body linear acceleration jerk signal in the axis Z (time domain analysis) 
+
+*  tBodyGyro-mean()-X  
+ Mean value of the body angular velocity signal in the axis X (time domain analysis) 
+
+*  tBodyGyro-mean()-Y  
+ Mean value of the body angular velocity signal in the axis Y (time domain analysis) 
+
+*  tBodyGyro-mean()-Z  
+ Mean value of the body angular velocity signal in the axis Z (time domain analysis) 
+
+*  tBodyGyro-std()-X  
+ Standard deviation of the body angular velocity signal in the axis X (time domain analysis) 
+
+*  tBodyGyro-std()-Y  
+ Standard deviation of the body angular velocity signal in the axis Y (time domain analysis) 
+
+*  tBodyGyro-std()-Z  
+ Standard deviation of the body angular velocity signal in the axis Z (time domain analysis) 
+
+*  tBodyGyroJerk-mean()-X  
+ Mean value of the body angular velocity jerk signal in the axis X (time domain analysis) 
+
+*  tBodyGyroJerk-mean()-Y  
+ Mean value of the body angular velocity jerk signal in the axis Y (time domain analysis) 
+
+*  tBodyGyroJerk-mean()-Z  
+ Mean value of the body angular velocity jerk signal in the axis Z (time domain analysis) 
+
+*  tBodyGyroJerk-std()-X  
+ Standard deviation of the body angular velocity jerk signal in the axis X (time domain analysis) 
+
+*  tBodyGyroJerk-std()-Y  
+ Standard deviation of the body angular velocity jerk signal in the axis Y (time domain analysis) 
+
+*  tBodyGyroJerk-std()-Z  
+ Standard deviation of the body angular velocity jerk signal in the axis Z (time domain analysis) 
+
+*  tBodyAccMag-mean()  
+ Mean value of the magnitude of the three-dimensional body linear acceleration signals  (time domain analysis) 
+
+*  tBodyAccMag-std()  
+ Standard deviation of the magnitude of the three-dimensional body linear acceleration signals  (time domain analysis) 
+
+*  tGravityAccMag-mean()  
+ Mean value of the magnitude of the three-dimensional gravity linear acceleration signals  (time domain analysis) 
+
+*  tGravityAccMag-std()  
+ Standard deviation of the magnitude of the three-dimensional gravity linear acceleration signals  (time domain analysis) 
+
+*  tBodyAccJerkMag-mean()  
+ Mean value of the magnitude of the three-dimensional body linear acceleration jerk signals  (time domain analysis) 
+
+*  tBodyAccJerkMag-std()  
+ Standard deviation of the magnitude of the three-dimensional body linear acceleration jerk signals  (time domain analysis) 
+
+*  tBodyGyroMag-mean()  
+ Mean value of the magnitude of the three-dimensional body angular velocity signals  (time domain analysis) 
+
+*  tBodyGyroMag-std()  
+ Standard deviation of the magnitude of the three-dimensional body angular velocity signals  (time domain analysis) 
+
+*  tBodyGyroJerkMag-mean()  
+ Mean value of the magnitude of the three-dimensional body angular velocity jerk signals  (time domain analysis) 
+
+*  tBodyGyroJerkMag-std()  
+ Standard deviation of the magnitude of the three-dimensional body angular velocity jerk signals  (time domain analysis) 
+
+*  fBodyAcc-mean()-X  
+ Mean value of the body linear acceleration signal in the axis X (frequency domain analysis) 
+
+*  fBodyAcc-mean()-Y  
+ Mean value of the body linear acceleration signal in the axis Y (frequency domain analysis) 
+
+*  fBodyAcc-mean()-Z  
+ Mean value of the body linear acceleration signal in the axis Z (frequency domain analysis) 
+
+*  fBodyAcc-std()-X  
+ Standard deviation of the body linear acceleration signal in the axis X (frequency domain analysis) 
+
+*  fBodyAcc-std()-Y  
+ Standard deviation of the body linear acceleration signal in the axis Y (frequency domain analysis) 
+
+*  fBodyAcc-std()-Z  
+ Standard deviation of the body linear acceleration signal in the axis Z (frequency domain analysis) 
+
+*  fBodyAccJerk-mean()-X  
+ Mean value of the body linear acceleration jerk signal in the axis X (frequency domain analysis) 
+
+*  fBodyAccJerk-mean()-Y  
+ Mean value of the body linear acceleration jerk signal in the axis Y (frequency domain analysis) 
+
+*  fBodyAccJerk-mean()-Z  
+ Mean value of the body linear acceleration jerk signal in the axis Z (frequency domain analysis) 
+
+*  fBodyAccJerk-std()-X  
+ Standard deviation of the body linear acceleration jerk signal in the axis X (frequency domain analysis) 
+
+*  fBodyAccJerk-std()-Y  
+ Standard deviation of the body linear acceleration jerk signal in the axis Y (frequency domain analysis) 
+
+*  fBodyAccJerk-std()-Z  
+ Standard deviation of the body linear acceleration jerk signal in the axis Z (frequency domain analysis) 
+
+*  fBodyGyro-mean()-X  
+ Mean value of the body angular velocity signal in the axis X (frequency domain analysis) 
+
+*  fBodyGyro-mean()-Y  
+ Mean value of the body angular velocity signal in the axis Y (frequency domain analysis) 
+
+*  fBodyGyro-mean()-Z  
+ Mean value of the body angular velocity signal in the axis Z (frequency domain analysis) 
+
+*  fBodyGyro-std()-X  
+ Standard deviation of the body angular velocity signal in the axis X (frequency domain analysis) 
+
+*  fBodyGyro-std()-Y  
+ Standard deviation of the body angular velocity signal in the axis Y (frequency domain analysis) 
+
+*  fBodyGyro-std()-Z  
+ Standard deviation of the body angular velocity signal in the axis Z (frequency domain analysis) 
+
+*  fBodyAccMag-mean()  
+ Mean value of the magnitude of the three-dimensional body linear acceleration signals  (frequency domain analysis) 
+
+*  fBodyAccMag-std()  
+ Standard deviation of the magnitude of the three-dimensional body linear acceleration signals  (frequency domain analysis) 
