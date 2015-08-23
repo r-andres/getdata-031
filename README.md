@@ -38,24 +38,24 @@ Each record provided contains (more details in the code book section)
 **Notes** 
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
-- First line contains the name of each feature
-- Only meaningful mean() and std() features have been left
+- First line contains the name of each feature.
+- Only meaningful mean() and std() features have been left.
 - The "BodyBody" features have been also intently filtered as long as a concrete
-  definition could not be deduced from the original features description
+  definition could not be deduced from the original features description.
 
 
 ## The analysis
 The 'run_analysis.R' script does the following:
- * Retrieves from the internet the source data package
+ * Retrieves from the internet the source data package.
  * Merges the training and the test sets to create one data set.
  * Extracts only the measurements on the mean and standard deviation for each measurement. 
- * Uses descriptive activity names to name the activities in the data set
+ * Uses descriptive activity names to name the activities in the data set.
  * Appropriately labels the data set with descriptive variable names. 
  * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## How to run 'run_analysis.R'
 
-1. Get this repository from github
+1. Clone this repository from github.
 
 ```{r}
 git clone https://github.com/r-andres/getdata-031.git
@@ -63,7 +63,7 @@ git clone https://github.com/r-andres/getdata-031.git
 ```
 
 
-1. Execute the following R code in your environment. 
+1. Execute the following code in the R framework. 
 
 ```{r}
 setwd('path/to/your/local/clone')
@@ -76,15 +76,13 @@ source('run_analysis.R')
 IMPORTANT:  The script, as first steps, retrieves the required data package from internet and decompresses it. 
 The 'run_analysis.R' script can be run without downloading the original data as long as the data required is prepared in your working directory.
 
-IMPORTANT:  Ensure that the library **dplyr** is installed in your R framework
-
+IMPORTANT:  Ensure that the library **dplyr** is installed in your R framework.
 
 
 
 ## Reading the tidy dataset
 
-The generated tidy dataset can be read using the following R code
-
+The generated tidy dataset can be read using the following R code:
 
 ```{r}
 
@@ -103,7 +101,7 @@ tidyDataDS <- read.table(localfile, header = TRUE, sep=",")
 ## Code book
 
 #### activity  
- Identifies the activity being performed by the volunteer for each window sample. Possible values:  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING  
+ Identifies the activity being performed by the volunteer for each window sample. Possible values:  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
 #### subject  
  Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
